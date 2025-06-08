@@ -15,6 +15,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:8080",  # 로컬 개발 환경
         "https://smart-scheduler-frontend.vercel.app",  # Vercel 배포 URL
+        "https://smart-scheduler-backend-production.up.railway.app",  # Railway 배포 URL
     ],
     allow_credentials=True,
     allow_methods=["*"],
