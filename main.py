@@ -10,6 +10,10 @@ from typing import List, Optional
 
 app = FastAPI()
 
+@app.get("/")
+async def root():
+    return {"message": "Smart Scheduler Backend API is running"}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
