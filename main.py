@@ -12,7 +12,10 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8080"],  # Vue 포트
+    allow_origins=[
+        "http://localhost:8080",  # 로컬 개발 환경
+        "https://smart-scheduler-frontend.vercel.app",  # Vercel 배포 URL
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
