@@ -1,0 +1,15 @@
+# ── secrets ──
+.env
+.env.*
+!.env.example
+
+# ── python ──
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# ── local data / generated ──
+*.db
+*.sqlite3
